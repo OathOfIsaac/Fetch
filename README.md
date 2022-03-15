@@ -11,8 +11,8 @@
 >I WANT a way to organize my daily schedule for certain clients
 
 ##### Technologies To Use
->Google Maps
->MAP API: MapBox
->Bulma 
->material ui
->Tailwind
+- Google Maps
+- MapBox
+- Bulma 
+- material ui
+- Tailwind
