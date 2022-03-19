@@ -1,24 +1,19 @@
-var factButtonEl = document.querySelector("dog fact");
+var factButton = document.getElementById('dog-fact');
+var factPrint = document.getElementById('fact-print')
 
-var api = 'https://dog-api.kinduff.com/api/facts';
-var parameter = '?number=1';
+factButton.addEventListener('click' , getFact )
 
-function setup() {
-    createCanvas(400,200);
+var api = 'http://dog-api.kinduff.com';
 
-var button = select('dogFact');
-factButtonEl.addEventListener('click', getFact);
-}
+
 
 function getFact() {
     var url = api + parameter; 
-    loadJSON(url, gotData);
+    console.log(url)
 }
 
 function gotData(data) {
     dogFact = data;
 }
 
-
-
-console.log(dogFactEl);
+console.log
