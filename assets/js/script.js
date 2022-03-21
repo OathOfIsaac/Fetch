@@ -36,19 +36,22 @@ var dogBreedInputEl = document.querySelector("dog-breed");
 var nameInputEl = document.querySelector("name");
 var phoneInputEl = document.querySelector("phone");
 var emailInputEl = document.querySelector("email");
+var dogFactBtnEl = document.querySelector(".fact-btn")
+var dogFactReturnEl = document.querySelector("#dog-fact-return")
 
-var getDogFact = function (parameter) {
+var getDogFact = function () {
     //format github api url
-    var apiUrl = 'https://dog-api.kinduff.com/api/facts' + paramater;
-    parameter = ?number=1
-
+    var parameter = "?number=1"
+    var apiUrl = 'https://cors-anywhere.herokuapp.com/https://dog-api.kinduff.com/api/facts' + parameter
+    
     //make a request to the url
     fetch(apiUrl)
         .then(function (response) {
         // request was successful
         if (response.ok) {
-            response.json()then(function (data) {
-                displayFact(data, paramater);
+            response.json().then(function (data) {
+                displayFact(data);
+                console.log(data);
             });
         } else {
             console.log('Error: DogFactAPI Not Found')
@@ -60,9 +63,15 @@ var getDogFact = function (parameter) {
     });
 };
 
+function displayFact(apiReturn) {
+    dogFactReturnEl.textContent= apiReturn.facts[0]
+}
+
 var formSubmitHandler = function(event) {
     event.preventDefault();
     console.log(event);
     // get value from input element
-    var name = 
+    //var name = 
 }
+
+dogFactBtnEl.addEventListener('click', getDogFact)
