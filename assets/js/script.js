@@ -30,14 +30,15 @@
 // function gotData(data) {
 //     dogFact = data;
 // }
-var userFormEl = document.querySelector("user-form");
-var dogNameInputEl = document.querySelector("dog-name");
-var dogBreedInputEl = document.querySelector("dog-breed");
-var nameInputEl = document.querySelector("name");
-var phoneInputEl = document.querySelector("phone");
-var emailInputEl = document.querySelector("email");
+var userFormEl = document.querySelector("#user-form");
+var dogNameInputEl = document.querySelector("#dog-name");
+var dogBreedInputEl = document.querySelector("#dog-breed");
+var nameInputEl = document.querySelector("#name");
+var phoneInputEl = document.querySelector("#phone");
+var emailInputEl = document.querySelector("#email");
 var dogFactBtnEl = document.querySelector(".fact-btn")
 var dogFactReturnEl = document.querySelector("#dog-fact-return")
+
 
 var getDogFact = function () {
     //format github api url
@@ -52,6 +53,8 @@ var getDogFact = function () {
             response.json().then(function (data) {
                 displayFact(data);
                 console.log(data);
+            }).catch(function(err){
+                console.log(err)
             });
         } else {
             console.log('Error: DogFactAPI Not Found')
@@ -70,8 +73,17 @@ function displayFact(apiReturn) {
 var formSubmitHandler = function(event) {
     event.preventDefault();
     console.log(event);
-    // get value from input element
-    //var name = 
+    var breed = dogBreedInputEl.value 
+    console.log(breed)
+    var apiUrl='https://dog.ceo/api/breed/' + breed.toLowerCase() + '/images/random'
+    fetch(apiUrl).then(function(res){
+        return res.json()
+    }).then(function(data){
+        console.log(data)
+    });
+
+    
 }
 
 dogFactBtnEl.addEventListener('click', getDogFact)
+userFormEl.addEventListener('submit', formSubmitHandler)
