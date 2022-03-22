@@ -110,3 +110,5 @@ dogBreedReturnEl.src = searchHistory
 
 dogFactBtnEl.addEventListener('click', getDogFact)
 userFormEl.addEventListener('submit', formSubmitHandler)
+
+
