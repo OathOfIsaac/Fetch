@@ -1,2 +1,3 @@
 # Fetch
-As a professional dog walker I want an app that will remind me when to feed the bowls, refill wastebins and other tasks I want an app to provide randomized routes to walk my clients dog.  I want an app that will tell me when my time is up with a certain client  SO I can move on to the next client. I want an A way to order my clients schedule for certain days
+As a dog lover, I want an applcation that allows me to have fun while learning about dogs. I want an app that generates random dog facts on the push of a button.
+I want to be able to get dog pictures by typing the name of any dog breed and be able to save the pictures I generate.
