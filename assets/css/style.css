@@ -1,9 +1,9 @@
 :root {
-    --primary: #0b40b4;
+    --primary: #283c68;
     --secondary: #bdd631;
     --tertiary: #0b40b4;
     --light-dark: #686d6b;
-    --dark: #38302e;
+    --dark: #283c68;
     --border-radius: .3rem;
   }
   
@@ -60,7 +60,7 @@
   
    .btn:hover {
     color: white;
-    background-color: var(--tertiary);
+    background-color: var(--dark);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }
@@ -94,7 +94,7 @@
   
   .hero {
     padding: 3% 4%;
-    background-color:yellow;
+    background-color:rgb(230, 230, 89);
     color:var(--dark);
   }
   
