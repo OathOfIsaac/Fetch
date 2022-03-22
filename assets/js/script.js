@@ -38,6 +38,9 @@ var phoneInputEl = document.querySelector("#phone");
 var emailInputEl = document.querySelector("#email");
 var dogFactBtnEl = document.querySelector(".fact-btn")
 var dogFactReturnEl = document.querySelector("#dog-fact-return")
+var cardFormEl = document.querySelector('#card-form');
+var dogBreedReturnEl = document.querySelector('#dog-breed-img')
+
 
 
 var getDogFact = function () {
@@ -79,11 +82,31 @@ var formSubmitHandler = function(event) {
     fetch(apiUrl).then(function(res){
         return res.json()
     }).then(function(data){
-        console.log(data)
+        console.log(data);
+        show_image(data.message);
     });
 
+    function show_image(data) {
+        //var dogBreedReturnEl = document.querySelector('#dog-breed-img') - for reference 
+        var img = dogBreedReturnEl;
+        //var imgLink = String(data.message)
+        //console.log(imgLink)
+        img.setAttribute("src", data);
+        localStorage.setItem("dog-history", data)
+
+    
+        //cardFormEl.appendChild(img);
+        
+    }
     
 }
+
+var searchHistory = localStorage.getItem("dog-history")
+
+dogBreedReturnEl.src = searchHistory
+
+
+
 
 dogFactBtnEl.addEventListener('click', getDogFact)
 userFormEl.addEventListener('submit', formSubmitHandler)
