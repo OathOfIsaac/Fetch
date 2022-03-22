@@ -1,74 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-    <body class="flex-column min-100-vh">
-        <header class="hero">
-          <h1 class="app-title"><i class="fab"></i> Fetch: A Graceful Walk</h1>
-          <p>Have you ever wondered what kind of dog you saw walking down the street? You think you know what breed it was but you aren't sure, then this is the right place for you. Down below enter the breed of the dog and a photo and a fact will display.
-          </p>
-        </header>
+
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title"><i class="fab"></i> Fetch: A Graceful Walk</h1>
+      <p>Have you ever wondered what kind of dog you saw walking down the street? You think you know what breed it was
+        but you aren't sure, then this is the right place for you. Down below enter the breed of the dog and a photo and
+        a fact will display.
+      </p>
+    </header>
 
     <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-          <div class="card" id="card-form">
-            <h3 class="card-header text-uppercase">Search for Your Dog Today</h3>
-            <form id="user-form" class="card-body">
-                 <!-- Dog Name Input 
-              <label class="form-label" for="Dog Name">Dog Name</label>
-              <input name="username" id="dog-name" type="text" autofocus="true" class="form-input" /> -->
-                <!-- Dog Breed Input -->
-              <label class="form-label" for="Dog Breed">Dog Breed</label>
-              <input name="dog-breed" id="dog-breed" type="text" autofocus="true" class="form-input" />
-                <!-- User Name Input
-              <label class="form-label" for="User Name">Your Name</label>
-              <input name="username" id="name" type="text" autofocus="true" class="form-input" />
-                 Phone Number
-              <label class="form-label" for="User Phone">Your Phone Number</label>
-              <input name="phone" id="phone" type="number" autofocus="true" class="form-input" />
-                 Email 
-              <label class="form-label" for="Email">Your Email</label>
-              <input name="email" id="email" type="email" autofocus="true" class="form-input" /> -->
-                <!-- Form Submit Button -->
-              <button type="submit" class="btn">Find Dog!</button>
-              <!-- The image tag we are referencing in the js, API Dog breed image goes here -->
-              <img id="dog-breed-img"></img>
-            </form>
-            
-          </div>
+      <div class="col-12 col-md-4">
+        <div class="card" id="card-form">
+          <h3 class="card-header text-uppercase">Search for Your Dog Today</h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label" for="Dog Breed">Dog Breed</label>
+            <input name="dog-breed" id="dog-breed" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Find Dog!</button>
+            <img id="dog-breed-img"></img>
+          </form>
         </div>
-        <!-- <button>Schedule your FREE walk today!</button>
-
-        <div>
-            <form>
-                <label for="Dog Name">Dog Name(s):</label>
-                <input type="text" id="dName" name="dName"><br>
-                <label for="Breed">Dog Breed:</label>
-                <input type="text" id="dBreed" name="dBreed"><br>
-                <label for="Your Name">Your Name:</label>
-                <input type="text" id="yName" name="yName"><br>
-                <label for="Your Phone Number">Phone Number:</label>
-                <input type="number" id="phone" name="phone"><br>
-                <p>Please seperate multiple dog names/breeds by comma</p>
-            </form>
-        </div> -->
-
-        <div class="card col-12">
-            <h3 class="card-header text-uppercase">Get a random Dog Fact</h3>
-            <form id="user-form" class="card-body">
-              <button type="button" class="fact-btn btn">Get Random Fact :)</button>
-            </form>
-            <h4 class="" id="dog-fact-return"></h4>
-          </div>
+      </div>
+      <div class="card col-12">
+        <h3 class="card-header text-uppercase">Get a random Dog Fact</h3>
+        <form id="user-form" class="card-body">
+          <button type="button" class="fact-btn btn">Get Random Fact :)</button>
+        </form>
+        <h4 class="" id="dog-fact-return"></h4>
+      </div>
     </main>
-<script src="./assets/js/script.js"></script>
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
+
 </html>
