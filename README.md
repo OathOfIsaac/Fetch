@@ -18,3 +18,4 @@ link to page: https://oathofisaac.github.io/Fetch/
 - CSS
 - Javascript
 - kinduff.github.io
+-cors-anywhere.herokuapp.com
