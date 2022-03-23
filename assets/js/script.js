@@ -76,9 +76,14 @@ function displayFact(apiReturn) {
 var formSubmitHandler = function(event) {
     event.preventDefault();
     console.log(event);
-    var breed = dogBreedInputEl.value 
+    var breedValue = dogBreedInputEl.options[dogBreedInputEl.selectedIndex].value
+    // var breedText = dogBreedInputEl.options[dogBreedInputEl.selectedIndex].textContent 
+  
+    // var breedTextFix = breedText.replace( " ","-")
+    // var breedValueFix = breedValue.split("-").reverse().join('-')
+    var breed = breedValue.replace("-","/")
     console.log(breed)
-    var apiUrl='https://dog.ceo/api/breed/' + breed.toLowerCase() + '/images/random'
+    var apiUrl='https://dog.ceo/api/breed/' + breed + '/images/random'
     fetch(apiUrl).then(function(res){
         return res.json()
     }).then(function(data){
