@@ -112,6 +112,17 @@ p {
   box-shadow: 6px 5px var(--light-dark);
 }
 
+.dog-fact {
+  font-size: 2rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 5% 0;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 5px var(--light-dark);
+  
+}
+
 .list-group {
   padding: 0;
   list-style: none;
@@ -161,6 +172,13 @@ p {
 
 .card-body {
   padding: 2.5%;
+}
+
+.card-footer {
+  margin: 10px 40px 20px;
+  border: ridge yellow;
+  border-width: 10px;
+  border-radius: 30px;
 }
 
 /* FORM */
