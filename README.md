@@ -7,8 +7,7 @@ When I type a dog breed.
 Then I am given a dog breed specific picture.
 
 ##### Technologies To Use
-- Google apis
-- cloudfare
-- Bulma 
-- Icebox
-- Tailwind
+- fog.ceo/dog-api
+- HTML
+- CSS
+- Javascript
