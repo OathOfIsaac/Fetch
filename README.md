@@ -1,18 +1,13 @@
 # Fetch
-###### As a professional dog walker 
->I WANT an app that will remind me when to feed the bowls, refill wastebins and other tasks
->
->I WANT an app to provide randomized routes to walk my clients dog. 
-
->I WANT an app that will tell me when my time is up with a certain client  
->
->SO THAT I can move on to the next client. 
->
->I WANT a way to organize my daily schedule for certain clients
+###### As a dog lover I want an application that randomizes dog facts and generates breed specific pictures.
+Given a mobile app that accepts user input.
+When I push a button 
+Then I am given a random dog fact.
+When I type a dog breed.
+Then I am given a dog breed specific picture.
 
 ##### Technologies To Use
-- Google Maps
-- MapBox
-- Bulma 
-- material ui
-- Tailwind
+- fog.ceo/dog-api
+- HTML
+- CSS
+- Javascript
