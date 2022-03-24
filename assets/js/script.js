@@ -31,11 +31,11 @@
 //     dogFact = data;
 // }
 var userFormEl = document.querySelector("#user-form");
-var dogNameInputEl = document.querySelector("#dog-name");
+// var dogNameInputEl = document.querySelector("#dog-name");
 var dogBreedInputEl = document.querySelector("#dog-breed");
-var nameInputEl = document.querySelector("#name");
-var phoneInputEl = document.querySelector("#phone");
-var emailInputEl = document.querySelector("#email");
+// var nameInputEl = document.querySelector("#name");
+// var phoneInputEl = document.querySelector("#phone");
+// var emailInputEl = document.querySelector("#email");
 var dogFactBtnEl = document.querySelector(".fact-btn")
 var dogFactReturnEl = document.querySelector("#dog-fact-return")
 var cardFormEl = document.querySelector('#card-form');

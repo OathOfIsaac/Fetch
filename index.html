@@ -15,7 +15,7 @@
 
   <body class="flex-column min-100-vh">
     <header class="hero">
-      <h1 class="app-title"><i class="fab"></i> Fetch: A Graceful Walk</h1>
+      <h1 class="app-title"><i class="fab"></i> Fetch!: A Graceful Pic</h1>
       <p>Have you ever wondered what kind of dog you saw walking down the street? You think you know what breed it was
         but you aren't sure, then this is the right place for you. Down below enter the breed of the dog and a photo and
         a fact will display.
@@ -28,6 +28,7 @@
           <h3 class="card-header text-uppercase">Search for Your Dog Today</h3>
           <form id="user-form" class="card-body">
             <label class="form-label" for="Dog Breed">Dog Breed</label>
+            <!-- Options for dog select - breeds-->
             <!-- Added changes - Isaac -->
             <select name="dog-breed" id="dog-breed" type="text" autofocus="true" class="form-input">
               <option value="affenpinscher">affenpinscher</option>
@@ -176,20 +177,34 @@
               <option value="wolfhound-irish">irish wolfhound</option>
 
             </select>
+            <!-- Dog Breed Button Element -->
             <button type="submit" class="btn">Find Dog!</button>
+            <!-- Dog Breed Image Return-->
             <img id="dog-breed-img"></img>
           </form>
         </div>
       </div>
       <div class="card col-12">
+        <!-- Dog Fact Card-->
         <h3 class="card-header text-uppercase">Get a random Dog Fact</h3>
-        <form id="user-form" class="card-body">
+        <div id="user-form" class="card-body">
+          <!-- Dog Fact Button Element -->
           <button type="button" class="fact-btn btn">Get Random Fact :)</button>
-        </form>
+        </div>
         <h4 class="card dog-fact card-footer" id="dog-fact-return"></h4>
       </div>
     </main>
     <script src="./assets/js/script.js"></script>
   </body>
+
+<footer>
+  <!-- Copyright -->
+  <div class="text-center card-header p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <p class="btn">© 2022 Copyright: Isaac Gonzalez, Joseph Murillo, Javier Razo</p>
+    <a class="text-reset fw-bold"></a> 
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 </html>
